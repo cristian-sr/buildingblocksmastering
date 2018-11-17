@@ -50,8 +50,10 @@ function isOldEnoughToDrive(age){
   var output = isOldEnoughToDrinkAndDrive(22);
   console.log(output); // --> false */
   
+  function isOldEnoughToDrinkAndDrive(age){
+      return age < 21
+  }
 
-  
   /*preImmersive-buildingBlocksMastery-008-checkAge
   Write a function called “checkAge”.
   Given a person’s name and age, “checkAge” returns one of two messages:
