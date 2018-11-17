@@ -35,7 +35,10 @@ function isOldEnoughToDrive(age){
   var output = isOldEnoughToVote(22);
   console.log(output); // --> true */
   
-  
+  function isOldEnoughToVote(age){
+    return age >= 18
+  }
+
 
   /*preImmersive-buildingBlocksMastery-004-isOldEnoughToDrinkAndDrive
   Write a function called “isOldEnoughToDrinkAndDrive”.
