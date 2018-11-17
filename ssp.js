@@ -64,6 +64,15 @@ function isOldEnoughToDrive(age){
   var output = checkAge('Adrian', 22);
   console.log(output); // --> 'Welcome, Adrian!' */
   
+  function checkAge(name, age){
+      if(age < 21){
+          string = ('Go Home, '+name+'!');
+          return string;
+      } else {
+          string = ('Welcome, '+name+'!');
+          return string;
+      }
+  }
   
   
   /*preImmersive-buildingBlocksMastery-009-getFullName
