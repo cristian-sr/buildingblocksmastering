@@ -82,7 +82,12 @@ function isOldEnoughToDrive(age){
   var output = getFullName('Joe', 'Smith');
   console.log(output); // --> 'Joe Smith'*/
   
-  
+  function getFullName(firstName, lastName){
+      fullName = (firstName+' '+lastName);
+      return fullName;
+  }
+
+
   /*preImmersive-buildingBlocksMastery-010-getLengthOfWord
   Write a function called “getLengthOfWord”.
   Given a word, “getLengthOfWord” returns the length of the given word.
