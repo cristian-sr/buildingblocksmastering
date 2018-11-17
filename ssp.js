@@ -11,7 +11,6 @@ function isOldEnoughToDrink(age){
     return age >= 21
 }
 
-
 /*preImmersive-buildingBlocksMastery-002-isOldEnoughToDrive
   Write a function called “isOldEnoughToDrive”.
   Given a number, in this case an age, “isOldEnoughToDrive” returns whether a person of this given age is old enough to legally drive in the United States.
@@ -20,6 +19,11 @@ function isOldEnoughToDrink(age){
   
   var output = isOldEnoughToDrive(22);
   console.log(output); // --> true*/
+
+function isOldEnoughToDrive(age){
+    return age >= 16
+}
+
   
   
   /*preImmersive-buildingBlocksMastery-003-isOldEnoughToVote
