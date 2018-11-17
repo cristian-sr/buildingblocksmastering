@@ -7,6 +7,10 @@ Notes:
 var output = isOldEnoughToDrink(22);
 console.log(output); // --> true*/
 
+function isOldEnoughToDrink(age){
+    return age >= 21
+}
+
 
 /*preImmersive-buildingBlocksMastery-002-isOldEnoughToDrive
   Write a function called “isOldEnoughToDrive”.
