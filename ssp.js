@@ -548,7 +548,9 @@ function cube(num){
   var output = getFirstElement([1, 2, 3, 4, 5]);
   console.log(output); // --> 1*/
   
-  
+  function getFirstElement(array){
+      return array[0]
+  }
   
   /*preImmersive-buildingBlocksMastery-040-getLastElement
   Write a function called “getLastElement”.
