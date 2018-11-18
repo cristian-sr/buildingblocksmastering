@@ -137,7 +137,13 @@ function isOldEnoughToDrive(age){
   var output = isLessThan30(9);
   console.log(output); // --> true*/
   
-  
+  function isLessThan30(num) {
+      if (num < 30) {
+          return true;
+      } else {
+          return false;
+      }
+  }
   
     /*preImmersive-buildingBlocksMastery-014-equalsTen
   Write a function called “equalsTen”.
