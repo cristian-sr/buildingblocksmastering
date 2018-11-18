@@ -196,7 +196,9 @@ function isOldEnoughToDrive(age){
   var output = isEqualTo(11, 10);
   console.log(output); // --> false */
   
-  
+  function isEqualTo(num1, num2){
+      return num2 === num1
+  }
   
   /* preImmersive-buildingBlocksMastery-018-isEven
   Write a function called “isEven”.
