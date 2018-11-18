@@ -563,6 +563,9 @@ function cube(num){
   var output = getLastElement([1, 2, 3, 4]);
   console.log(output); // --> 4 */
   
+  function getLastElement(array){
+      return array[array.length -1]
+  }
   
   
   /*preImmersive-buildingBlocksMastery-041-addToFront
