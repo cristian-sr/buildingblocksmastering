@@ -503,7 +503,9 @@ function cube(num){
   var output = isPersonOldEnoughToDrink(obj);
   console.log(output); // --> false*/
   
-  
+  function isPersonOldEnoughToDrink(person){
+      return person.age >= 21
+  }
   
   /*preImmersive-buildingBlocksMastery-037-addArrayProperty
   Write a function called “addArrayProperty”.
