@@ -533,6 +533,9 @@ function cube(num){
   var output = getNthElement([1, 3, 5], 1);
   console.log(output); // --> 3 */
   
+  function getNthElement(array, n){
+      return array[n]
+  }
   
   /*preImmersive-buildingBlocksMastery-039-getFirstElement
   Write a function called “getFirstElement”.
