@@ -425,6 +425,10 @@ function cube(num){
   addObjectProperty(person1, 'manager', person2);
   console.log(person1.manager); // --> { name: 'Mr. Burns', role: 'supervisor' }*/
   
+  function addObjectProperty(obj1, key, obj2){
+      obj1[key] = obj2;
+      return obj1;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-033-isPersonOldEnoughToDrinkAndDrive
