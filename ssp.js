@@ -304,7 +304,13 @@ function isEitherEven(num1, num2){
   var output = isEvenLength('wow');
   console.log(output); // --> false*/
   
-  
+  function isEvenLength(word){
+      if (word.length % 2 === 0){
+          return true
+      } else {
+          return false
+      }
+  }
   
     /*preImmersive-buildingBlocksMastery-025-isEvenAndGreaterThan10
   Write a function called “isEvenAndGreaterThanTen”.
