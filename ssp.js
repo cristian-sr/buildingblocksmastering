@@ -466,6 +466,9 @@ function cube(num){
   var output = isPersonOldEnoughToDrive(obj);
   console.log(output); // --> true */
   
+  function isPersonOldEnoughToDrive(person){
+      return person.age >= 16
+  }
   
   
   /*preImmersive-buildingBlocksMastery-035-isPersonOldEnoughToVote
