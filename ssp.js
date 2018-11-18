@@ -152,6 +152,13 @@ function isOldEnoughToDrive(age){
   var output = equalsTen(9);
   console.log(output); // --> false*/
   
+  function equalsTen(num){
+      if (num === 10) {
+          return true;
+      } else {
+          return false;
+      }
+  }
   
   
     /*preImmersive-buildingBlocksMastery-015-isLessThan
