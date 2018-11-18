@@ -320,7 +320,13 @@ function isEitherEven(num1, num2){
   var output = isEvenAndGreaterThanTen(13);
   console.log(output); // --> false*/
   
-  
+  function isEvenAndGreaterThanTen(num){
+      if ((num > 10) && (num % 2 === 0)){
+          return true
+      } else {
+          return false
+      }
+  }
   
   /* preImmersive-buildingBlocksMastery-026-average
   Write a function called “average”.
