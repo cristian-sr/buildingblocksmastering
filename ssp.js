@@ -255,6 +255,13 @@ function isOldEnoughToDrive(age){
   var output = areBothOdd(1, 3);
   console.log(output); // --> true*/
   
+  function areBothOdd(num1, num2){
+      if ((num1 % 2) && (num2 % 2) !== 0){
+          return true
+      } else {
+          return false
+      }
+  }
   
     /*preImmersive-buildingBlocksMastery-022-isEitherEven
   Write a function called “isEitherEven”.
