@@ -111,7 +111,7 @@ function isOldEnoughToDrive(age){
       totalLength = (word1.length + word2.length);
       return totalLength;
   }
-  
+
   
   /*preImmersive-buildingBlocksMastery-012-isGreaterThanTen
   Write a function called “isGreaterThan10”.
@@ -120,8 +120,16 @@ function isOldEnoughToDrive(age){
   var output = isGreaterThan10(11);
   console.log(output); // --> true*/
   
-  
-  
+  function isGreaterThan10(num){
+    if (num > 10){
+        return true;
+    } else if (num <= 10) {
+        return false;
+    } else {
+        return undefined;
+    }
+  }
+    
   /*preImmersive-buildingBlocksMastery-013-isLessThan30
   Write a function called “isLessThan30”.
   Given a number, “isLessThan30” returns whether the given number is less than 30.
