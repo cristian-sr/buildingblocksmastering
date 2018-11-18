@@ -470,7 +470,7 @@ function cube(num){
       return person.age >= 16
   }
   
-  
+
   /*preImmersive-buildingBlocksMastery-035-isPersonOldEnoughToVote
   Write a function called “isPersonOldEnoughToVote”.
   
@@ -485,7 +485,9 @@ function cube(num){
   var output = isPersonOldEnoughToVote(obj);
   console.log(output); // --> true*/
   
-  
+  function isPersonOldEnoughToVote(person){
+      return person.age >= 18
+  }
   
   /*preImmersive-buildingBlocksMastery-036-isPersonOldEnoughToDrink
   Write a function called “isPersonOldEnoughToDrink”.
