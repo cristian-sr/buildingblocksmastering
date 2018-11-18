@@ -403,8 +403,12 @@ function cube(num){
   addFullNameProperty(person);
   console.log(person.fullName); // --> 'Jade Smith'*/
   
-  
-  
+  function addFullNameProperty(obj){
+      var fullName = obj.firstName.concat(" "+ obj.lastName);
+      obj.fullName = fullName;
+      return obj;
+  }
+    
   /*preImmersive-buildingBlocksMastery-032-addObjectProperty
   Write a function called “addObjectProperty”.
   
