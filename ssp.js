@@ -447,7 +447,9 @@ function cube(num){
   var output = isPersonOldEnoughToDrinkAndDrive(obj);
   console.log(output); // --> false*/
   
-  
+  function isPersonOldEnoughToDrinkAndDrive(person){
+      return false
+  }
   
   
   /*preImmersive-buildingBlocksMastery-034-isPersonOldEnoughToDrive
