@@ -362,7 +362,10 @@ function isEitherEven(num1, num2){
   var output = cube(3);
   console.log(output); // --> 27*/
   
-  
+function cube(num){
+    return num * num * num 
+}
+
   
   /*preImmersive-buildingBlocksMastery-029-square
   Write a function called “square”.
