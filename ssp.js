@@ -288,7 +288,13 @@ function isEitherEven(num1, num2){
   var output = isOddLength('special');
   console.log(output); // --> true*/
   
-  
+  function isOddLength(word){
+      if (word.length % 2 !== 0){
+          return true
+      } else {
+          return false
+      }
+  }
   
   /*preImmersive-buildingBlocksMastery-024-isEvenLength
   Write a function called “isEvenLength”.
