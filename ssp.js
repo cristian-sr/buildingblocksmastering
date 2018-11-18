@@ -222,7 +222,13 @@ function isOldEnoughToDrive(age){
   var output = isOdd(9);
   console.log(output); // --> true*/
   
-  
+  function isOdd(num) {
+      if (num % 2 !== 0){
+          return true
+      } else {
+          return false
+      }
+  }
   
     /* preImmersive-buildingBlocksMastery-020-isSameLength
   Write a function called “isSameLength”.
