@@ -175,7 +175,7 @@ function isOldEnoughToDrive(age){
           return false 
       }
   }
-  
+
   
   /*preImmersive-buildingBlocksMastery-016-isGreaterThan
   Write a function called “isGreaterThan”.
@@ -184,7 +184,9 @@ function isOldEnoughToDrive(age){
   var output = isGreaterThan(11, 10);
   console.log(output); // --> false */
   
-  
+  function isGreaterThan(num1, num2){
+      return num2 > num1
+  }
   
   
   /*preImmersive-buildingBlocksMastery-017-isEqualTo
