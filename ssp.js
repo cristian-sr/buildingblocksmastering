@@ -336,6 +336,9 @@ function isEitherEven(num1, num2){
   var output = average(4, 6);
   console.log(output); // --> 5 */
   
+  function average(num1, num2){
+      return (num1 + num2)/2
+  }
   
   
   /* preImmersive-buildingBlocksMastery-027-computeAreaOfATriangle
