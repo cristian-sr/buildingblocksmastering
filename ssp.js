@@ -107,6 +107,10 @@ function isOldEnoughToDrive(age){
   var output = getLengthOfTwoWords('some', 'words');
   console.log(output); // --> 9*/
   
+  function getLengthOfTwoWords(word1, word2){
+      totalLength = (word1.length + word2.length);
+      return totalLength;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-012-isGreaterThanTen
