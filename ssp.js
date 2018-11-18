@@ -95,6 +95,9 @@ function isOldEnoughToDrive(age){
   var output = getLengthOfWord('some');
   console.log(output); // --> 4 */
   
+  function getLengthOfWord(word){
+      return word.length
+  }
   
   
   /*preImmersive-buildingBlocksMastery-011-getLengthOfTwoWords
