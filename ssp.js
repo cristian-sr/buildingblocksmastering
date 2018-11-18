@@ -375,7 +375,9 @@ function cube(num){
   var output = square(5);
   console.log(output); // --> 25 */
   
-  
+  function square(num){
+      return num * num 
+  }
   
   /*preImmersive-buildingBlocksMastery-030-computeAverageLengthOfWords
   Write a function called “computeAverageLengthOfWords”.
