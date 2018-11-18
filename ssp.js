@@ -339,7 +339,7 @@ function isEitherEven(num1, num2){
   function average(num1, num2){
       return (num1 + num2)/2
   }
-  
+
   
   /* preImmersive-buildingBlocksMastery-027-computeAreaOfATriangle
   Write a function called “computeAreaOfATriangle”.
@@ -349,6 +349,10 @@ function isEitherEven(num1, num2){
   var output = computeAreaOfATriangle(4, 6);
   console.log(output); // --> 12*/
   
+  function computeAreaOfATriangle(base, height){
+      resp = (base * height)/2;
+      return resp;
+  }
   
    /*preImmersive-buildingBlocksMastery-028-cube
   Write a function called “cube”.
