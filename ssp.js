@@ -1285,7 +1285,12 @@ function cube(num){
   Notes:
   * In order to do this problem, you should be familiar with “String.split”, and “Array.join”.*/
   
-  
+  function convertDoubleSpaceToSingle(str){
+      var singleSpace = str.split('  ');
+      console.log((singleSpace));
+      var newString = singleSpace.join(' ');
+    return newString;      
+  }
   
   /*preImmersive-buildingBlocksMastery-080-joinThreeArrays
   Write a function called “joinThreeArrays”.
