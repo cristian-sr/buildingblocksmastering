@@ -2255,7 +2255,7 @@ function getElementOfArrayProperty(obj, key , n){
     return smallest;
   }
   
-  
+
   /*preImmersive-buildingBlocksMastery-119-findShortestElement*
   Write a function called “findShortestElement”.
   
@@ -2269,7 +2269,20 @@ function getElementOfArrayProperty(obj, key , n){
   console.log(output); // --> 'a'
   */
   
-  
+  function findShortestElement(arr){
+      var shortest = arr[0];
+
+      if (arr.length < 1){
+          return '';
+      }
+
+      for (var i=0; i < arr.length; i++){
+          if (arr[i].length < shortest.length){
+              shortest =  arr[i];
+          }
+      }
+    return shortest;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-120-getLargestElement*
