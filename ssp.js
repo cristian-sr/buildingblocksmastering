@@ -619,7 +619,10 @@ function cube(num){
   var output = computePerimeterOfARectangle(5, 2);
   console.log(output); // --> 14 */
   
-  
+  function computePerimeterOfARectangle(length, width){
+      perimeter = 2*(length + width);
+      return perimeter;
+  }
   
   /* preImmersive-buildingBlocksMastery-045-computePerimeterOfATriangle
   Write a function called “computePerimeterOfATriangle”.
