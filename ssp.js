@@ -1384,7 +1384,9 @@ function cube(num){
   var output = getIndexOf('a', 'I am a hacker');
   console.log(output); // --> 2*/
   
-  
+  function getIndexOf(char, str){
+      return str.search(char)
+  }
   
   
   /*preImmersive-buildingBlocksMastery-086-findMinLengthOfThreeWords
