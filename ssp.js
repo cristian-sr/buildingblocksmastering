@@ -1397,7 +1397,15 @@ function cube(num){
   var output = findMinLengthOfThreeWords('a', 'be', 'see');
   console.log(output); // --> 1*/
   
-  
+  function findMinLengthOfThreeWords(w1, w2, w3){
+      if (w1.length >= 1){
+          return w1.length;
+      } else if (w2.length >= 1){
+          return w2.length;
+      } else if (w3.length >= 3){
+          return w3.length;
+      }
+  }
   
   
   /*preImmersive-buildingBlocksMastery-087-findMaxLengthOfThreeWords
