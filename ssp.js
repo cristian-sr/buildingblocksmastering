@@ -2961,7 +2961,9 @@ function getLongestOfThreeWords(word1, word2, word3){
   var output = isEvenWithoutModulo(8);
   console.log(output); // --> true*/
   
-  
+  function isEvenWithoutModulo(num){
+      return (num & 1) ? false:true
+  }
   
   
   /*preImmersive-buildingBlocksMastery-144-multiplyBetween
