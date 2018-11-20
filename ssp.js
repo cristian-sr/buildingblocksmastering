@@ -1626,7 +1626,15 @@ function cube(num){
   var output = getNthElementOfProperty(obj, 'key', 1);
   console.log(output); // --> 2*/
   
-  
+  function getNthElementOfProperty(obj, key, n){
+      if (!obj.hasOwnProperty(key)){
+          return undefined;
+      } else if (obj[key].length === 0 || n >= obj[key].length || !Array.isArray(obj[key])){
+          return undefined;
+      } else {
+          return obj[key][n];
+      }
+  }
   
   /*preImmersive-buildingBlocksMastery-096-getLastElementOfProperty
   Write a function called “getLastElementOfProperty”.
