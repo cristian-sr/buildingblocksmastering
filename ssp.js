@@ -607,6 +607,9 @@ function cube(num){
   var output = computeAreaOfARectangle(4, 8);
   console.log(output); // --> 32*/
   
+  function computeAreaOfARectangle(length, width){
+      return length * width;
+  }
   
   /*preImmersive-buildingBlocksMastery-044-computePerimeterOfARectangle
   Write a function called “computePerimeterOfARectangle”.
