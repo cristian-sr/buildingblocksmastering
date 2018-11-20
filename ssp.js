@@ -2057,7 +2057,22 @@ function cube(num){
   var output = getAllButLastElementOfProperty(obj, 'key');
   console.log(output); // --> [1,2]*/
   
-  
+  function getAllButLastElementOfProperty(obj, key){
+      var empty = [];
+
+      if (obj[key] === undefined){
+          return empty;
+      } else if(obj[key].length < 1){
+          return empty;
+      } if(Array.isArray(obj[key]) === false){
+          return empty;
+      }
+
+      for (var i=0; i < obj[key].length - 1; i++){
+          empty.push(obj[key][i]);
+      }
+    return empty;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-111-getElementOfArrayProperty
