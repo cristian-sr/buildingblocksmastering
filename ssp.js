@@ -822,7 +822,9 @@ function cube(num){
   console.log(output); // --> [1, 2]
   console.log(arr); // --> [1, 2, 3] */
   
-  
+  function removeFromFrontOfNew(arr){
+      return arr.slice(0,1)
+  }
   
   /*preImmersive-buildingBlocksMastery-005-getProperty
   Write a function called “getProperty”.
