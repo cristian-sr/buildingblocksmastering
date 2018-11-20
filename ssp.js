@@ -2547,7 +2547,31 @@ function getElementOfArrayProperty(obj, key , n){
   var output = findSmallestNumberAmongMixedElements([4, 'lincoln', 9, 'octopus']);
   console.log(output); // --> 4*/
   
-  
+  function findSmallestNumberAmongMixedElements(arr){
+      var smallest = 0;
+      var numberCount = 0;
+      var numberArray = [];
+
+      for (var element = 0; element < arr.length; element++){
+          if (typeof arr[element] === 'number'){
+              numberCount++;
+              numberArray.push(arr[element]);
+          }
+      }
+
+      if (arr.length < 1 || numberCount < 1){
+          return 0;
+      }
+
+      smallest = numberArray[0];
+
+      for (var number=0; number < numberArray.length; number++){
+          if (numberArray[number] < smallest){
+              smallest = numberArray[number];
+          }
+      }
+    return smallest;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-130-getLongestWordOfMixedElements*
