@@ -2296,7 +2296,20 @@ function getElementOfArrayProperty(obj, key , n){
   var output = getLargestElement([5, 2, 8, 3]);
   console.log(output); // --> 8;*/
   
-  
+  function getLargestElement(arr){
+      var longest = arr[0];
+
+      if (arr.length < 1){
+          return 0;
+      }
+
+      for (var prop in arr){
+          if (arr[prop] > longest){
+              longest = arr[prop];
+          }
+      }
+    return longest;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-121-computeSumOfAllElements*
