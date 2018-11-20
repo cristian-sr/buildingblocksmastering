@@ -838,7 +838,9 @@ function cube(num){
   var output = getProperty(obj, 'key');
   console.log(output); // --> 'value' */
   
-  
+  function getProperty(obj, key){
+      return obj[key]
+  }
   
   /*preImmersive-buildingBlocksMastery-006-addProperty
   Write a function called “addProperty”.
