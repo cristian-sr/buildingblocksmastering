@@ -2441,6 +2441,24 @@ function getElementOfArrayProperty(obj, key , n){
   * In order to use some of the methods that will be most helpful to you, you will most likely want to do some string to number conversion and vice versa.
   * Be sure to familiarize yourself with the “toString” method, as well as the “Number” function. */
   
+  function sumDigits(num){
+      var total = 0;
+      var newString =  num.toSrting().split('');
+    
+      for ( var i=0; i < newString.length; i++){
+          if (newString[i] === '-'){
+              i++;
+
+              var converted =  parseInt(newString[i]);
+              total -= converted;
+              continue;
+          }
+
+          var converted = parseInt(newString[i]);
+          total += converted;
+      }
+    return total;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-127-getSumOfAllElementsAtProperty*
