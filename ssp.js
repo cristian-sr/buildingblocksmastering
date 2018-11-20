@@ -865,7 +865,9 @@ function cube(num){
   removeProperty(obj, 'name');
   console.log(obj.name); // --> undefined*/
   
-  
+  function removeProperty(obj, key){
+      delete obj[key]
+  }
   
   /*preImmersive-buildingBlocksMastery-060-removeFromFrontOfNew
   Write a function called “removeFromFrontOfNew”.
@@ -880,7 +882,9 @@ function cube(num){
   console.log(output); // --> [2, 3]
   console.log(arr); // --> [1, 2, 3]*/
   
-  
+  function removeFromFrontOfNew(arr){
+      return arr.slice(1)
+  }
   
   /*preImmersive-buildingBlocksMastery-061-countCharacter
   Write a function called “countCharacter”.
