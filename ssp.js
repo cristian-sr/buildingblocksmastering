@@ -915,7 +915,11 @@ function cube(num){
   var output = getAllLetters('Radagast');
   console.log(output); // --> ['R', 'a', 'd', 'a', 'g', 'a', 's', 't']*/
   
-  
+  function getAllLetters(str){
+      var word = 'Radagast';
+          word = str.split('');
+      return str.split('');
+  }
   
   /*preImmersive-buildingBlocksMastery-063-getAllWords
   Write a function called “getAllWords”.
