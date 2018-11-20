@@ -1921,7 +1921,7 @@ function cube(num){
     return evenElements;
   }
 
-  
+
   /*
   preImmersive-buildingBlocksMastery-106-filterEvenLengthWords*
   Write a function called “filterEvenLengthWords”.
@@ -1931,7 +1931,16 @@ function cube(num){
   var output = filterEvenLengthWords(['word', 'words', 'word', 'words']);
   console.log(output); // --> ['word', 'word']*/
   
-  
+  function filterEvenLengthWords(words){
+      var evenWords = [];
+
+      for (var i=0; i < words.length; i++){
+          if (word[i].length % 2 === 0) {
+              evenWords.push(word[i]);
+          }
+      }
+    return evenWords;
+  }
   
   /*preImmersive-buildingBlocksMastery-107-getLengthOfLongestElement*
   Write a function called “getLengthOfLongestElement”.
