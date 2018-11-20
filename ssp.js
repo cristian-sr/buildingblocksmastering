@@ -1161,7 +1161,13 @@ function cube(num){
   removeEvenValues(obj);
   console.log(obj); // --> { b: 3 }*/
   
-  
+  function removeEvenValues(obj){
+      for (var key in obj){
+          if (obj[key] % 2 === 0){
+              delete obj[key]
+          }
+      }
+  }
   
   /*preImmersive-buildingBlocksMastery-074-countNumberOfKeys
   Write a function called “countNumberOfKeys”.
