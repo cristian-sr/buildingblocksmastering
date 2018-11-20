@@ -764,7 +764,9 @@ function cube(num){
   var output = getElementsUpTo(['a', 'b', 'c', 'd', 'e'], 3)
   console.log(output); // --> ['a', 'b', 'c'] */
   
-  
+  function getElementsUpTo(array, n) {
+      return array.splice(0, n)
+  }
   
   /*preImmersive-buildingBlocksMastery-056-getAllElementsButFirst
   Write a function called “getAllElementsButFirst”.
