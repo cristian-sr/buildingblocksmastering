@@ -1343,7 +1343,7 @@ function cube(num){
       return newArray;
   }
   
-  
+
   /*preImmersive-buildingBlocksMastery-083-getAllElementsButNth*
   Write a function called “getAllElementsButNth”.
   
@@ -1352,7 +1352,11 @@ function cube(num){
   var output = getAllElementsButNth(['a', 'b', 'c'], 1);
   console.log(output); // --> ['a', 'c']*/
   
-  
+  function getAllElementsButNth(array, n){
+      var nArray = array.slice();
+       array.splice(n, 1);
+      return array;
+  }
   
   /*preImmersive-buildingBlocksMastery-084-areValidCredentials
   Write a function called “areValidCredentials”.
