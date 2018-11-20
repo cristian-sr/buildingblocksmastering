@@ -2776,7 +2776,13 @@ function getElementOfArrayProperty(obj, key , n){
   var output = computeFactorialOfN(4);
   console.log(output); // --> 24*/
   
-  
+  function computeFactorialOfN(n){
+      if (n === 0) {
+          return 1
+      } else {
+          return n * computeFactorialOfN(n-1)
+      }
+  }
   
   
   /*preImmersive-buildingBlocksMastery-136-repeatString
