@@ -1221,7 +1221,14 @@ function cube(num){
   removeArrayValues(obj);
   console.log(obj); // --> { b: 2 }*/
   
-  
+  function removeArrayValues(obj){
+      for (var key in obj){
+          if (Array.isArray(obj[key])){
+              delete obj[key]
+          }
+      }
+      return obj;
+  }
   
   /*preImmersive-buildingBlocksMastery-077-removeNumberValues
   removeNumberValues should remove any properties with values that are numbers
