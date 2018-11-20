@@ -2382,7 +2382,14 @@ function getElementOfArrayProperty(obj, key , n){
   var output = joinArrayOfArrays([[1, 4], [true, false], ['x', 'y']]);
   console.log(output); // --> [1, 4, true, false, 'x', 'y']*/
   
-  
+  function joinArrayOfArrays(arr){
+      var newArray = arr[0];
+
+      for (var i=1; i < arr.length; i++){
+          newArray = newArray.concat(arr[i]);
+      }
+    return newArray;
+  }
   
   /*preImmersive-buildingBlocksMastery-125-getProductOfAllElementsAtProperty*
   Write a function called “getProductOfAllElementsAtProperty”.
