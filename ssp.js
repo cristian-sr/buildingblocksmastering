@@ -2629,9 +2629,34 @@ function getElementOfArrayProperty(obj, key , n){
   console.log(output); // --> 5
   */
   
+  function getLargestNumberAmongMixedElements(arr){
+      var largest = 0;
+      var numberCount = 0;
+      var numberArray = [];
+
+      for (var element=0; element < arr.length; element++){
+          if (typeof arr[element] === 'number'){
+              numberCount++;
+              numberArray.push(arr[element]);
+          }
+      }
+
+      if (arr.length < 1 || numberCount < 1) {
+          return 0;
+      }
+
+      largest = numberArray[0];
+
+      for (var number=0; number < numberArray.length; number++){
+          if (numberArray[number] > largest) {
+              largest = numberArray[number];
+          }
+      }
+    return largest;
+  }
   
-  
-  
+
+    
   /*preImmersive-buildingBlocksMastery-132-computeSummationToN
   Write a function called “computeSummationToN”.
   
