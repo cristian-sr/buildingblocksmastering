@@ -790,7 +790,10 @@ function cube(num){
   var output = getAllElementsButLast(input);
   console.log(output); // --> [1, 2 , 3] */
   
-  
+  function getAllElementsButLast(array){
+      return array.slice(0, -1)
+  }
+
   /*preImmersive-buildingBlocksMastery-058-removeFromFront
   Write a function called “removeFromFront”.
   
