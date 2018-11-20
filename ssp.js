@@ -2794,7 +2794,9 @@ function getElementOfArrayProperty(obj, key , n){
   console.log(output); // --> 'codecodecode'
   */
   
-  
+  function repeatString(string, num) {
+    return string.repeat(num)
+  }
   
   
   /*preImmersive-buildingBlocksMastery-137-getLongestOfThreeWords*
