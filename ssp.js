@@ -3168,7 +3168,16 @@ function getLongestOfThreeWords(word1, word2, word3){
   ['a', 11, true, 1]*/
   
   
-  
+  function listAllValues(obj){
+      var result = [];
+
+      for (var key in obj){
+          if (obj.hasOwnProperty(key)) {
+              result.push(obj[key]);
+          }
+      }
+    return result;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-151-convertObjectToList3
