@@ -1527,7 +1527,14 @@ function cube(num){
   var output = countAllCharacters('banana');
   console.log(output); // --> {b: 1, a: 3, n: 2}*/
   
-  
+  function countAllCharacters(str){
+      var obj = {};
+        string = str.splice('');
+        for (var i=0; i < str.length; i++){
+            obj[str[i]] = (obj[str[i]] || 0) + 1;
+        }
+        return obj;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-092-getElementsGreaterThan10AtProperty*
