@@ -3038,7 +3038,13 @@ function getLongestOfThreeWords(word1, word2, word3){
   Function’s return value (output):
   { Kevin : 'Hart' }*/
   
-  
+  function transformFirstAndLast(array){
+      var result = {};
+
+      result[array[0]] = array[array.length - 1];
+
+    return result;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-147-convertArrayToObject2
