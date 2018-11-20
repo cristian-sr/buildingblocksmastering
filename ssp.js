@@ -690,7 +690,9 @@ function cube(num){
   var output = computePower(2, 3);
   console.log(output); // --> 8 */
   
-  
+  function computePower(nume, exponent){
+      return Math.pow(num, exponent)
+  }
   
   /*preImmersive-buildingBlocksMastery-050-computeSquareRoot
   Write a function called “computeSquareRoot”.
