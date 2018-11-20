@@ -2143,7 +2143,17 @@ function getElementOfArrayProperty(obj, key , n){
   var output = computeProductOfAllElements([2, 5, 6]);
   console.log(output); // --> 60*/
   
-  
+  function computeProductOfAllElements(arr){
+
+    var product = 1;
+        if (arr.length < 1){
+            return 0;
+        }
+            for (var i=0; i < arr.length; i++){
+                product = product * arr[i];
+            }
+    return product;
+  }
   
   /*preImmersive-buildingBlocksMastery-115-filterEvenElements*
   Write a function called “filterEvenElements”.
