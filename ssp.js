@@ -1443,7 +1443,17 @@ function cube(num){
   var output = getElementsThatEqual10AtProperty(obj, 'key');
   console.log(output); // --> [10, 10]*/
   
-  
+  function getElementsGreaterThan10AtProperty(obj, key){
+      var result = [];
+      if (Array.isArray(obj[key])){
+          for (var i=0; i < obj[key].length; i++){
+              if (obj[key][i] === 10){
+                result.push(obj[key][i])
+              }
+          }
+      }
+      return result;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-089-select*
