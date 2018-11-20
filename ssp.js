@@ -1762,7 +1762,19 @@ function cube(num){
   var output = getAverageOfElementsAtProperty(obj, 'key');
   console.log(output); // --> 2*/
   
-  
+  function getAverageOfElementsAtProperty(obj, key){
+      var sum = 0;
+      var average = 0;
+
+      if ((obj[key] === undefined) || (obj[key].length < 1) || (Array.isArray(obj[key])) === false ){
+          return 0;
+      }
+      for (var prop in obj[key]){
+          sum = sum + obj[key][prop];
+      }
+      average = sum / obj[key].length;
+      return average;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-101-getEvenLengthWordsAtProperty*
