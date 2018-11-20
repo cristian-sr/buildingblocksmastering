@@ -2918,7 +2918,17 @@ function getLongestOfThreeWords(word1, word2, word3){
   var output = multiply(4, 7);
   console.log(output); // --> 28*/
   
-  
+  function multiply(num1, num2){
+      //positive numbers
+      if (num2 > 0){
+          return (num1 + multiply(num1, num2-1));
+      }
+      //negative numbers
+      else if (num2 < 0){
+          return -multiply(num1, -num2);
+      }
+    return 0;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-142-isOddWithoutModulo
