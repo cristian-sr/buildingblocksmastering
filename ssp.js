@@ -3003,10 +3003,20 @@ function getLongestOfThreeWords(word1, word2, word3){
   
   */
   
+  function computeSumBetween(n1, n2){
+      var computeSum = 0;
+
+      if (n1 >= n2){
+          return 0;
+      }
+
+      for (var i=n1; i < n2; i++){
+          computeSum = computeSum + i;
+      }
+    return computeSum;
+  }
   
-  
-  
-  
+   
   /*preImmersive-buildingBlocksMastery-146-convertArrayToObject1
   Write a function ‘transformFirstAndLast’ that takes in an array, and returns an object with:
   1) the first element of the array as the object’s key, and
