@@ -805,7 +805,9 @@ function cube(num){
   var output = removeFromFront([1, 2, 3]);
   console.log(output); // --> [2, 3] */
   
-  
+  function removeFromFront(arr){
+      return arr.slice(1)
+  }
   
   /*preImmersive-buildingBlocksMastery-059-removeFromBackOfNew
   Write a function called “removeFromBackOfNew”.
