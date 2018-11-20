@@ -1094,7 +1094,13 @@ function cube(num){
   removeNumbersLargerThan(5, obj);
   console.log(obj); // --> { b: 2, c: 'montana' }*/
   
-  
+  function removeNumbersLargerThan(num, obj){
+      for (var key in obj){
+          if (obj[key] > num) {
+              delete obj[key]
+          }
+      }
+  }
   
   /*preImmersive-buildingBlocksMastery-071-removeNumbersLessThan
   Write a function called “removeNumbersLessThan”.
