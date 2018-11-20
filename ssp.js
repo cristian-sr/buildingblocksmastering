@@ -2508,7 +2508,31 @@ function getElementOfArrayProperty(obj, key , n){
   console.log(output); // --> 'two'
   */
   
-  
+  function findShortestWordAmongMixedElements(arr){
+      var shortest = 0;
+      var numberCount = 0;
+      var numberArray = [];
+
+      for (var element=0; element < arr.length; element++){
+          if (typeof arr[element] === 'string') {
+              numberCount++;
+              numberArray.push(arr[element]);
+          }
+      }
+
+      if (arr.length < 1 || numberCount < 1){
+          return ('');
+      }
+
+      shortest = numberArray[0];
+
+      for (var number=0; number < numberArray.length; number++){
+          if (numberArray[number].length < shortest.length){
+              shortest =  numberArray[number];
+          }
+      }
+    return shortest;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-129-findSmallestNumberAmongMixedElements*
