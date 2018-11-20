@@ -2943,7 +2943,10 @@ function getLongestOfThreeWords(word1, word2, word3){
   var output = isOddWithoutModulo(17);
   console.log(output); // --> true*/
   
-  
+  function isOddWithoutModulo(num){
+      //ternary operator
+      return (num & 1) ? true:false;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-143-isEvenWithoutModulo
