@@ -2567,7 +2567,7 @@ function getElementOfArrayProperty(obj, key , n){
 
       for (var number=0; number < numberArray.length; number++){
           if (numberArray[number] < smallest){
-              smallest = numberArray[number];
+              smallest   = numberArray[number];
           }
       }
     return smallest;
@@ -2587,7 +2587,32 @@ function getElementOfArrayProperty(obj, key , n){
   console.log(output); // --> 'word'
   */
   
-  
+  function getLongestWordOfMixedElements(arr){
+      var longest = 0;
+      var numberCount = 0;
+      var numberArray = [];
+
+      for (var element=0; element < arr.length; element++){
+          if (typeof arr[element] === 'string'){
+              numberCount++;
+              numberArray.push(arr[element]);
+          }
+      }
+
+      if (arr.length < 1 || numberCount < 1) {
+          return ('');
+      }
+
+      longest - numberArray[0];
+
+      for (var number = 0; number < numberArray.length; number++){
+          if (numberArray[number] > longest){
+              longest = numberArray[number];
+          }
+      }
+
+    return longest;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-131-getLargestNumberAmongMixedElements*
