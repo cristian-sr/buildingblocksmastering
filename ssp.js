@@ -2213,6 +2213,20 @@ function getElementOfArrayProperty(obj, key , n){
   console.log(output); // --> 'three'
   */
   
+  function getLongestElement(arr){
+      var longest = arr[0];
+
+      if (arr.length < 1){
+          return '';
+      }
+
+      for (var i=0; i < arr.length; i++){
+          if (arr[i].length > longest.length){
+              longest = arr[i];
+          }
+      }
+    return longest;
+  }
     
   
   /*preImmersive-buildingBlocksMastery-118-findSmallestElement*
