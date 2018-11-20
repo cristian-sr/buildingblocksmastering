@@ -2090,7 +2090,14 @@ function cube(num){
   
   */
   
-
+function getElementOfArrayProperty(obj, key , n){
+    if (obj[key] === undefined) {
+        return undefined;
+    } else if (Array.isArray(obj[key]) === false) {
+        return undefined;
+    }
+    return obj[key][n];
+}
 
   /*preImmersive-buildingBlocksMastery-112-squareElements*
   Write a function called “squareElements”.
