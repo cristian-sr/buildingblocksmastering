@@ -1366,7 +1366,9 @@ function cube(num){
   var output = areValidCredentials('Ritu', 'mylongpassword')
   console.log(output); // --> true*/
   
-  
+  function areValidCredentials(name, password){
+      return name.length > 3 && password.length >= 8
+  }
   
   /*preImmersive-buildingBlocksMastery-085-getIndexOf
   Write a function called “getIndexOf”.
