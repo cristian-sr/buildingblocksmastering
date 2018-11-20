@@ -1047,8 +1047,7 @@ function cube(num){
           return false;
       }
   }
-  
-  
+   
   
   /*preImmersive-buildingBlocksMastery-069-extend
   Write a function called “extend”.
@@ -1074,8 +1073,14 @@ function cube(num){
   console.log(obj1); // --> {a: 1, b: 2, c: 3}
   console.log(obj2); // --> {b: 4, c: 3}*/
   
-  
-  
+  function extend(obj1, obj2){
+    for (var key in obj2){
+        if(!obj1.hasOwnProperty(key)){
+            obj1[key] = obj2[key];
+        }
+    }
+  }
+
   /*preImmersive-buildingBlocksMastery-070-removeNumbersLargerThan
   Write a function called “removeNumbersLargerThan”.
   
