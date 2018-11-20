@@ -2811,7 +2811,16 @@ function getElementOfArrayProperty(obj, key , n){
   console.log(output); // --> 'these'
   */
   
+function getLongestOfThreeWords(word1, word2, word3){
+    if(word1.length >= 3) {  
+        return word1;
+      } else if (word2.length >= 3) {
+        return word2;
+      } else if (word3.length >= 1) {
+        return word3;
+    }
     
+}
   
   /*preImmersive-buildingBlocksMastery-138-findShortestOfThreeWords*
   Write a function called “findShortestOfThreeWords”.
