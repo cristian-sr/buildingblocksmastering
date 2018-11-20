@@ -1967,7 +1967,7 @@ function cube(num){
     return longest.length;
   }
   
-  
+
   /*preImmersive-buildingBlocksMastery-108-getSmallestElementAtProperty*
   Write a function called “getSmallestElementAtProperty”.
   
@@ -1984,8 +1984,28 @@ function cube(num){
   var output = getSmallestElementAtProperty(obj, 'key');
   console.log(output); // --> 1 */
   
+  function getSmallestElementAtProperty(obj, key){
+
+    if (obj[key] === false) {
+        return undefined;
+    } else if (Array.isArray(obj[key]) === false) {
+        return undefined;
+    } else if (obj[key].length < 1){
+        return undefined;
+    }
+
+    var smallest = obj[key][0];
+
+    for (var prop in obj[key]){
+        if (obj[key][prop] < smallest) {
+            smallest = obj[key][prop];
+        }
+    }
+    return smallest;
+  }
   
-  
+
+
   /*preImmersive-buildingBlocksMastery-109-getLargestElementAtProperty*
   Write a function called “getLargestElementAtProperty”.
   
