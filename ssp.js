@@ -1416,7 +1416,15 @@ function cube(num){
   var output = findMaxLengthOfThreeWords('a', 'be', 'see');
   console.log(output); // --> 3*/
   
-  
+  function findMaxLengthOfThreeWords(w1, w2, w3){
+      if (w1.length >=3){
+          return w1.length;
+      } else if (w2.length >=3){
+          return w2.length;
+      } else if (w3.length >=1) {
+          return w3.length;
+      }
+  }
   
   /*preImmersive-buildingBlocksMastery-088-getElementsThatEqual10AtProperty*
   Write a function called “getElementsThatEqual10AtProperty”.
