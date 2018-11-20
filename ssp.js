@@ -1907,6 +1907,20 @@ function cube(num){
   var output = getEvenElementsAtProperty(obj, 'key');
   console.log(output); // --> [1000, 50]*/
   
+  function getEvenElementsAtProperty(obj, key){
+      var evenElements = [];
+
+      if (!Array.isArray(obj[key])){
+          return [];
+      }
+      for (var element in obj[key]){
+          if (obj[key][element] % 2 === 0) {
+              evenElements.push(ojb[key][element]);
+          }
+      }
+    return evenElements;
+  }
+
   
   /*
   preImmersive-buildingBlocksMastery-106-filterEvenLengthWords*
