@@ -2855,6 +2855,22 @@ function getLongestOfThreeWords(word1, word2, word3){
   
   */
   
+  function computeCompoundInterest(principal, interstRate, compoundingFrequency, timeInYears){
+      //asign the original input to formula values
+        var p = principal;
+            r = interestRate;
+            n = compoundingFrequency;
+            t = timeInYears;
+            interest = 0; 
+            result = 0;
+
+     //FORMULA:   I = P(1+(r/n))nt - P
+
+        interest = (p * Math.pow((1 + (r/(n))), (n*t)));
+        result = interest - p;
+
+    return  result;
+  }
     
   
   /*preImmersive-buildingBlocksMastery-140-modulo
