@@ -1503,7 +1503,17 @@ function cube(num){
   var output = getElementsLessThan100AtProperty(obj, 'key');
   console.log(output); // --> [20, 50]*/
   
-  
+  function getElementsLessThan100AtProperty(obj, key){
+      var list = obj[key];
+      if (!Array.isArray(list) || list.length === 0){
+          return [];
+      }
+      return list.filter(function(item){
+          if (item < 100){
+              return item;
+          }
+      })
+  }
   
   
   /*preImmersive-buildingBlocksMastery-091-countAllCharacters
