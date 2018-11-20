@@ -3132,6 +3132,14 @@ function getLongestOfThreeWords(word1, word2, word3){
   ['a', 'number', 'hungry', 'grammyWins']*/
   
   
+  function getAllKeys(obj){
+      var keys = [];
+
+      for (var prop in obj){
+          keys.push(prop);
+      }
+    return keys;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-150-convertObjectToList2
