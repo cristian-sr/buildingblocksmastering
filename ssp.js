@@ -1702,7 +1702,18 @@ function cube(num){
   var output = getOddLengthWordsAtProperty(obj, 'key');
   console.log(output); // --> ['has', 'words']*/
   
-  
+  function getOddLengthWordsAtProperty(obj, key){
+      var oddLengthWords = [];
+      if (!Array.isArray(obj[key])) {
+          return [];
+      } 
+        for (var element in obj[key]) {
+            if (obj[key][element].length % 2 !== 0) {
+                oddLengthWords.push(obj[key][element]);
+            }
+        }
+        return oddLengthWords;
+  }
   
   /*
   preImmersive-buildingBlocksMastery-099-computeAverageOfNumbers*
