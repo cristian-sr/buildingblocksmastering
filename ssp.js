@@ -2891,7 +2891,20 @@ function getLongestOfThreeWords(word1, word2, word3){
   var output = modulo(25, 4);
   console.log(output); // --> 1*/
   
-  
+  function modulo(num1, num2){
+    //math formula 'a mod b=a b[ab]'
+
+    //divide num1 on num2
+    var divNums = parseInt(num1/num2);
+
+    //multiply divNums * num2
+    var product = divNums * num2;
+
+    //asign new var for result of num1 - product to get modulo
+    var resp = num1 - product;
+
+    return resp;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-141-multiply
