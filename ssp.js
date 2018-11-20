@@ -1816,7 +1816,17 @@ function cube(num){
   var output = filterOddLengthWords(['there', 'it', 'is', 'now']);
   console.log(output); // --> ['there', "now']*/
   
-  
+  function filterOddLengthWords(words){
+      var oddWords = [];
+
+      for (var i=0; i < words.length; i++) {
+          if (words[i].length % 2 !== 0) {
+              oddWords.push(words[i]);
+          }
+      }
+      return oddWords;
+  }
+
   /*
   preImmersive-buildingBlocksMastery-103-getSquaredElementsAtProperty*
   Write a function called “getSquaredElementsAtProperty”.
