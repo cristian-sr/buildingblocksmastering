@@ -2121,7 +2121,16 @@ function getElementOfArrayProperty(obj, key , n){
   Given an array of numbers, “filterOddElements” returns an array containing only the odd numbers of the given array.
   var output = filterOddElements([1, 2, 3, 4, 5]); console.log(output); // --> [1, 3, 5]*/
   
-  
+  function filterOddElements(arr){
+      var odd = [];
+
+      for (var i=0; i < arr.length; i++){
+          if (arr[i] % 2 !== 0){
+              odd.push(arr[i]);
+          }
+      }
+    return odd;
+  }
   
   /*preImmersive-buildingBlocksMastery-114-computeProductOfAllElements*
   Write a function called “computeProductOfAllElements”.
