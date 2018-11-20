@@ -3063,7 +3063,15 @@ function getLongestOfThreeWords(word1, word2, word3){
   
   */
   
-  
+  function fromListToObject(array){
+      var object = {};
+
+      for (var i=0; i < array.length; i++){
+          var newArray = array[i];
+          object[newArray[0]] = newArray[1];
+      }
+    return object;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-148-convertArrayToObject3
