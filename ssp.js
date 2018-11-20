@@ -977,7 +977,10 @@ function cube(num){
   var output = removeFromBack([1, 2, 3]);
   console.log(output); // --> [1, 2] */
   
-  
+  function removeFromBack(arr){
+      arr.pop();
+      return arr;
+  }
   
   /*preImmersive-buildingBlocksMastery-066-or
   Write a function called “or”.
