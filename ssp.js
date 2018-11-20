@@ -1266,7 +1266,14 @@ function cube(num){
   removeStringValues(obj);
   console.log(obj); // { age: 20 } */
   
-  
+  function removeStringValues(obj){
+      for (var property in obj){
+          if (typeof obj[property] === 'string'){
+              delete obj[property]
+          }
+      }
+      return obj
+  }
   
   /*preImmersive-buildingBlocksMastery-079-convertDoubleSpaceToSingle
   Write a function called “convertDoubleSpaceToSingle”.
