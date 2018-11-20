@@ -1554,7 +1554,15 @@ function cube(num){
   var output = getElementsGreaterThan10AtProperty(obj, 'key');
   console.log(output); // --> [20, 30]*/
   
-  
+  function getElementsGreaterThan10AtProperty(obj, key){
+      var element = [];
+      for (var prop in ojb[key]){
+          if (obj[key][prop] > 10){
+              element.push(obj[key][prop]);
+          }
+      }
+      return element;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-093-removeElement*
