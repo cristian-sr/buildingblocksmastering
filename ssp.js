@@ -1577,7 +1577,11 @@ function cube(num){
   var output = removeElement([1, 2, 3, 2, 1], 2);
   console.log(output); // --> [1, 3, 1]*/
   
-  
+  function removeElement(array, discarder){
+      return array.filter(function(value){
+          return value !== discarder;
+      })
+  }
   
   /*preImmersive-buildingBlocksMastery-094-getFirstElementOfProperty
   Write a function called “getFirstElementOfProperty”.
