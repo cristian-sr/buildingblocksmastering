@@ -737,7 +737,9 @@ function cube(num){
   console.log(output); // --> [1, 2, 3, 4]
   You should be familiar with the “concat” method for this problem. */
   
-  
+  function joinArrays(arr1, arr2){
+      return arr1.cancat(arr2)
+  }
   
   /*preImmersive-buildingBlocksMastery-054-getElementsAfter
   Write a function called “getElementsAfter”.
