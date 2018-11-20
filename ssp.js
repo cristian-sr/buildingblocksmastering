@@ -2022,7 +2022,24 @@ function cube(num){
   var output = getLargestElementAtProperty(obj, 'key');
   console.log(output); // --> 4*/
   
-  
+  function getLargestElementAtProperty(obj, key){
+      if (obj[key] === false){
+          return undefined;
+      } else if(Array.isArray(obj[key]) === false) {
+          return undefined;
+      } else if (obj[key].length < 1) {
+          return undefined;
+      }
+
+      var largest = obj[key][0];
+
+      for (var prop in obj[key]){
+          if (obj[key][prop] > largest) {
+              largest = obj[key][prop];
+          }
+      }
+      return largest;
+  }
   
   /*preImmersive-buildingBlocksMastery-110-getAllButLastElementOfProperty
   Write a function called “getAllButLastElementOfProperty”.
