@@ -1200,7 +1200,13 @@ function cube(num){
   removeOddValues(obj);
   console.log(obj); // --> { a: 2, c: 4 }*/
   
-  
+  function removeOddValues(obj){
+      for (var key in obj){
+          if (obj[key] % 2 === 1){
+              delete obj[key]
+          }
+      }
+  }
 
   /*preImmersive-buildingBlocksMastery-076-removeArrayValues
   Write a function called “removeArrayValues”.
