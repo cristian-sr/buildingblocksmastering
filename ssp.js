@@ -1036,7 +1036,17 @@ function cube(num){
   var output = isEitherEvenAndLessThan9(72, 2);
   console.log(output); // --> false*/
   
-  
+  function isEitherEvenAndLessThan9(num1, num2){
+      if (num1 % 2 === 0 || num2 % 2 === 0){
+          if (num1 < 9 && num2 < 9){
+              return true;
+          } else {
+              return false;
+          }
+      }else {
+          return false;
+      }
+  }
   
   
   
