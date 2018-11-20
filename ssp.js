@@ -1652,7 +1652,15 @@ function cube(num){
   var output = getLastElementOfProperty(obj, 'key');
   console.log(output); // --> 5*/
   
-  
+  function getLastElementOfProperty(obj, key){
+      if (Array.isArray(obj[key]) === fasle) {
+          return undefined;
+      } else if (obj[key] === undefined) {
+          return undefined;
+      } else {
+          return obj[key].pop();
+      }
+  }
   
   /*
   preImmersive-buildingBlocksMastery-097-keep*
