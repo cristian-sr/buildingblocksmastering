@@ -1674,7 +1674,15 @@ function cube(num){
   var output = keep([1, 2, 3, 2, 1], 2)
   console.log(output); --> [2, 2]*/
   
-  
+  function keep(array, keeper){
+      var newArray = [];
+      for (var i=0; i < array.length; i++){
+          if (array[i] === keeper) {
+              newArray.push(array[i]);
+          }
+      }
+      return newArray;
+  }
   
   /*
   preImmersive-buildingBlocksMastery-098-getOddLengthWordsAtProperty*
