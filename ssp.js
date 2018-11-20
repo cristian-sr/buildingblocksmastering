@@ -2668,6 +2668,15 @@ function getElementOfArrayProperty(obj, key , n){
   var output = computeSummationToN(6);
   console.log(output); // --> 21*/
   
+  function computeSummationToN(n){
+      sum = 0;
+      
+      for (var i=0; i <= n; i++){
+          sum += i;
+      }
+    return sum;
+  }
+
   
   
   /*preImmersive-buildingBlocksMastery-133-convertScoreToGrade
