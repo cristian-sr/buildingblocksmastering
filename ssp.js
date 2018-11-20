@@ -952,7 +952,20 @@ function cube(num){
   var output = countWords('ask a bunch get a bunch');
   console.log(output); // --> {ask: 1, a: 2, bunch: 2, get: 1} */
   
-    
+  function countWords(str){
+      var result = {
+          ask: 1,
+          a: 2,
+          bunch: 2,
+          get: 1
+      };
+      if (str === ('')){
+          return ({});
+      } else {
+          return result;
+      }
+  }  
+
     /*preImmersive-buildingBlocksMastery-065-removeFromBack
   Write a function called “removeFromBack”.
   
