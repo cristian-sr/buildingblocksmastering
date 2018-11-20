@@ -894,7 +894,15 @@ function cube(num){
   var output = countCharacter('I am a hacker', 'a');
   console.log(output); // --> 3*/
   
-  
+  function countCharacter(str, char){
+      var count = 0;
+        for (var i = 0; i < str.length; i++){
+            if (str[i] === char) {
+                count++;
+            }
+        }
+        return count;
+  }
   
   /*preImmersive-buildingBlocksMastery-062-getAllLetters
   Write a function called “getAllLetters”.
