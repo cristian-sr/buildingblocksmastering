@@ -1244,7 +1244,14 @@ function cube(num){
   removeNumberValues(obj);
   console.log(obj); // --> { b: 'remaining' }*/
   
-  
+  function removeNumberValues(obj){
+      for (var property in obj){
+          if (typeof obj[property] === 'number'){
+              delete obj[property]
+          }
+      }
+      return obj
+  }
   
   /*preImmersive-buildingBlocksMastery-078-removeStringValues
   removeStringValues should remove any properties with values that are strings
