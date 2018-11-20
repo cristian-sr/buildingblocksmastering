@@ -1844,6 +1844,19 @@ function cube(num){
   var output = getSquaredElementsAtProperty(obj, 'key');
   console.log(output); // --> [4, 1, 25]*/
   
+  function getSquaredElementsAtProperty(obj, key){
+      var squaredElements = [];
+
+      if (Array.isArray(obj[key]) === false){
+          return [];
+      }
+
+      for (var prop in obj[key]) {
+          squaredElements.push(obj[key][prop] * obj[key][prop]);
+      }
+
+      return squaredElements;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-104-getOddElementsAtProperty*
