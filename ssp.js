@@ -3098,7 +3098,19 @@ function getLongestOfThreeWords(word1, word2, word3){
   For example, let’s say the HR department adds a “tshirtSize” field to each employee record.
   Your code should flexibly accommodate that.*/
   
-  
+  function transformEmployeeData(employeeData){
+      var list = [];
+
+      for (var i=0; i < employeeData.length; i++){
+          var obj = {};
+
+          for (var j=0; j < employeeData[i].length; j++){
+              obj[employeeData[i][j][0]] = employeeData[i][j][1];
+          }
+          list.push(obj);
+      }
+    return list;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-149-convertObjectToList1
