@@ -1794,7 +1794,18 @@ function cube(num){
   var output = getEvenLengthWordsAtProperty(obj, 'key');
   console.log(output); // --> ['long', 'game']*/
   
-  
+  function getEvenLengthWordsAtProperty(obj, key){
+      var evenWords = [];
+      if (!Array.isArray(obj[key])) {
+          return [];
+      }
+        for (var element in obj[key]) {
+            if (obj[key][element].length % 2 === 0) {
+                evenWords.push(obj[key][element])''
+            }
+        }
+    return evenWords;
+  }
   
   /*
   preImmersive-buildingBlocksMastery-102-filterOddLengthWords*
