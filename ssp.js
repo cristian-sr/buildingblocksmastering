@@ -2833,6 +2833,13 @@ function getLongestOfThreeWords(word1, word2, word3){
   var output = findShortestOfThreeWords('a', 'two', 'three');
   console.log(output); // --> 'a'*/
   
+  function findShortestOfThreeWords(w1, w2, w3){
+      var words = [w1, w2, w3];
+
+      words.sort(function(a, b){return a.length - b.length});
+
+      return words[0];
+  }
   
   
   /*preImmersive-buildingBlocksMastery-139-computeCompoundInterest
