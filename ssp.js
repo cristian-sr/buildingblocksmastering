@@ -1324,7 +1324,6 @@ function cube(num){
     return newArray;
   }
   
-
   
   /*preImmersive-buildingBlocksMastery-082-addToBackOfNew
   Write a function called “addToBackNew”.
@@ -1338,6 +1337,11 @@ function cube(num){
   console.log(input); // --> [1, 2]
   console.log(output); // --> [1, 2, 3]*/
   
+  function addToBackOfNew(arr, element){
+      var newArray = arr.slice();
+      newArray.push(element);
+      return newArray;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-083-getAllElementsButNth*
