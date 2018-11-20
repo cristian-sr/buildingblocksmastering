@@ -2460,7 +2460,7 @@ function getElementOfArrayProperty(obj, key , n){
     return total;
   }
   
-  
+
   /*preImmersive-buildingBlocksMastery-127-getSumOfAllElementsAtProperty*
   Write a function called “getSumOfAllElementsAtProperty”.
   
@@ -2477,7 +2477,20 @@ function getElementOfArrayProperty(obj, key , n){
   var output = getSumOfAllElementsAtProperty(obj, 'key');
   console.log(output); // --> 13*/
   
-  
+  function getSumOfAllElementsAtProperty(obj, key){
+      var sum = 0;
+
+      if (obj[key] === undefined){
+          return 0;
+      } else if(Array.isArray(obj[key]) === false){
+          return 0;
+      }
+
+      for (var i=0; i < obj[key].length; i++){
+          sum += obj[key][i];
+      }
+    return sum;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-128-findShortestWordAmongMixedElements*
