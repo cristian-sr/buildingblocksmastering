@@ -1182,7 +1182,10 @@ function cube(num){
   var output = countNumberOfKeys(obj);
   console.log(output); // --> 3*/
   
-  
+  function countNumberOfKeys(obj){
+      obj = Object.keys(obj).length;
+      return obj;
+  }
   
   /*preImmersive-buildingBlocksMastery-075-removeOddValues
   Write a function called “removeOddValues”.
