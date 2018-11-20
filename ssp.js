@@ -1728,7 +1728,22 @@ function cube(num){
   var output = computeAverageOfNumbers(input);
   console.log(output); // --> 3*/
   
-  
+  function computeAverageOfNumbers(num){
+      var sum=0;
+      var numCount = num.length;
+      var average = 0;
+
+      if (num.length < 1){
+          return 0;
+      }
+
+      for (var i=0; i < num.length; i++){
+          sum = sum + num[i];
+      }
+
+      average = sum / numCount;
+      return average;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-100-getAverageOfElementsAtProperty*
