@@ -2363,7 +2363,15 @@ function getElementOfArrayProperty(obj, key , n){
   var output = getStringLength('hello');
   console.log(output); // --> 5*/
   
-  
+  function getStringLength(string){
+      var count = 0;
+
+      while (string) {
+          string = string.slice(1);
+          count++;
+      }
+    return count;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-124-joinArraysOfArrays
