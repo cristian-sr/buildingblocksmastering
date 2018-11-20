@@ -1318,8 +1318,13 @@ function cube(num){
   console.log(output); // --> [3, 1, 2];
   console.log(input); --> [1, 2] */
   
+  function addToFrontOfNew(arr, element){
+    var newArray = arr.slice();
+    newArray.splice((-newArray.length), 0, element);
+    return newArray;
+  }
   
-  
+
   
   /*preImmersive-buildingBlocksMastery-082-addToBackOfNew
   Write a function called “addToBackNew”.
