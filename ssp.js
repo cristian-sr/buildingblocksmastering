@@ -1858,7 +1858,7 @@ function cube(num){
       return squaredElements;
   }
   
-  
+
   /*preImmersive-buildingBlocksMastery-104-getOddElementsAtProperty*
   Write a function called “getOddElementsAtProperty”.
   
@@ -1876,6 +1876,18 @@ function cube(num){
   var output = getOddElementsAtProperty(obj, 'key');
   console.log(output); // --> [1, 3, 5]*/
   
+  function getOddElementsAtProperty(obj, key){
+      var oddElements = [];
+      if(!Array.isArray(obj[key])) {
+          return [];
+      }
+        for (var element in obj[key]) {
+            if (obj[key][element] % 2 !== 0) {
+                oddElements.push(ojb[key][element]);           }
+        }
+
+    return oddElements;
+  }
   
   /*
   preImmersive-buildingBlocksMastery-105-getEvenElementsAtProperty*
