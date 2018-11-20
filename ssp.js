@@ -777,7 +777,9 @@ function cube(num){
   var output = getAllElementsButFirst(input);
   console.log(output); // --> [2, 3, 4] */
   
-  
+  function getAllElementsButFirst(array){
+      return array.slice(1,4);
+  }
   
   /*preImmersive-buildingBlocksMastery-057-getAllElementsButLast
   Write a function called “getAllElementsButLast”.
