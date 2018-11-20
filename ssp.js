@@ -701,7 +701,9 @@ function cube(num){
   var output = computeSquareRoot(9);
   console.log(output); // --> 3 */
   
-  
+  function computeSquareRoot(num){
+      return Math.sqrt(num)
+  }
   
   /*preImmersive-buildingBlocksMastery-051-doubleSquareRootOf
   Write a function called “doubleSquareRootOf”.
