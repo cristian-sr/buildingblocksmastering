@@ -749,7 +749,9 @@ function cube(num){
   var output = getElementsAfter(['a', 'b', 'c', 'd', 'e'], 2);
   console.log(output); // --> ['d', 'e'] */
   
-  
+  function getElementsAfter(array, n) {
+      return array.splice(n + 1)
+  }
   
   /*preImmersive-buildingBlocksMastery-055-getElementsUpTo
   Write a function called “getElementsUpTo”.
