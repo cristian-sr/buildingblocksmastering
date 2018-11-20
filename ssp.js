@@ -2183,6 +2183,20 @@ function getElementOfArrayProperty(obj, key , n){
   var output = getLengthOfShortestElement(['one', 'two', 'three']);
   console.log(output); // --> 3*/
   
+  function getLengthOfShortestElement(arr){
+      var shortest = arr[0];
+      
+      if (arr.length < 1){
+          return 0;
+      }
+
+      for (var i=0; i < arr.length; i++){
+          if (arr[i].length < shortest.length){
+              shortest = arr[i];
+          }
+      }
+    return shortest.length; 
+  }
   
   
   
