@@ -2320,7 +2320,14 @@ function getElementOfArrayProperty(obj, key , n){
   var output = computeSumOfAllElements([1, 2, 3])
   console.log(output); // --> 6 */
   
-  
+  function computeSumOfAllElements(arr){
+      var sum = 0;
+
+      for (var i=0; i < arr.length; i++){
+          sum = sum + arr[i];
+      }
+    return sum;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-122-calculateBillTotal
@@ -2335,7 +2342,13 @@ function getElementOfArrayProperty(obj, key , n){
   var output = calculateBillTotal(20);
   console.log(output); // --> 24.9*/
   
-  
+  function calculateBillTotal(preTaxAndTipAmount){
+      var total = preTaxAndTipAmount;
+      var tax = total * 0.095;
+      var tip = total * 0.15;
+
+      return total + tax + tip;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-123-getStringLength
