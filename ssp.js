@@ -2407,7 +2407,23 @@ function getElementOfArrayProperty(obj, key , n){
   var output = getProductOfAllElementsAtProperty(obj, 'key');
   console.log(output); // --> 24*/
   
-  
+  function getProductOfAllElementsAtProperty(obj, key){
+      var product = 1;
+
+      if (obj[key] === false){
+          return 0;
+      } else if (Array.isArray(obj[key]) === false){
+          return 0;
+      } else if (obj[key].length < 1){
+          return 0;
+      }
+
+      for (var i=0; i < obj[key].length; i++){
+          product += obj[key][i];
+      }
+
+    return product;
+  }
   
   /*
   preImmersive-buildingBlocksMastery-126-sumDigits*
