@@ -850,7 +850,9 @@ function cube(num){
   addProperty(myObj, 'myProperty');
   console.log(myObj.myProperty); // --> true */
   
-  
+  function addProperty(obj, key){
+      obj[key] = true
+  }
   
   /*preImmersive-buildingBlocksMastery-007-removeProperty
   Write a function called “removeProperty”.
