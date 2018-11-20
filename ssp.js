@@ -1301,7 +1301,10 @@ function cube(num){
   console.log(output); // --> [1, 2, 3, 4, 5, 6]
   You should be familiar with the “concat” method for this problem.*/
   
-  
+  function joinThreeArrays(arr1, arr2, arr3){
+      allArr = arr1.concat(arr2, arr3);
+      return allArr;
+  }
   
   /*preImmersive-buildingBlocksMastery-081-addToFrontOfNew
   Write a function called “addToFrontOfNew”.
