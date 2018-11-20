@@ -3194,7 +3194,18 @@ function getLongestOfThreeWords(word1, word2, word3){
   
   [['name', 'Holly'], ['age', 35], ['role', 'producer']]*/
   
-  
+  function convertObjectToList(obj){
+      var array = [];
+
+      for (var prop in obj){
+          var array2 = [];
+
+          array2.push(prop);
+          array2.push(obj[prop]);
+          array2.push(array2);
+      }
+    return array;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-152-greetCustomer
