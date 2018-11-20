@@ -932,7 +932,14 @@ function cube(num){
   var output = getAllWords('Radagast the Brown');
   console.log(output); // --> ['Radagast', 'the', 'Brown']*/
   
-  
+  function getAllWords(str){
+      if (str === ('')){
+          return [ ];
+      } else {
+          str.split(' ');
+        return str.split(' ');
+      }
+  }
   
     /*preImmersive-buildingBlocksMastery-064-countWords
   Write a function called “countWords”.
