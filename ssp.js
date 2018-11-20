@@ -674,7 +674,12 @@ function cube(num){
   
   */
   
-  
+  function computeAreaOfACircle(radius){
+      pi = 3.14159265358979323846;
+      cArea = pi*(radius*radius);
+      return cArea;
+  }
+
   
   
   /*preImmersive-buildingBlocksMastery-049-computePower
