@@ -1017,7 +1017,12 @@ function cube(num){
   var output = isEitherEvenOrAreBoth7(2, 3);
   console.log(output); // --> true */
   
-  
+  function isEitherEvenOrAreBoth7(num1, num2){
+      if ((num1 % 2 === 0) || (num2 % 2 === 0) || (num1 === 7) && (num2 === 7)){
+          return true;
+      }
+      return false;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-068-isEitherEvenAndLessThan9
