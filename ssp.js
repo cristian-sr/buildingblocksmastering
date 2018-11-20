@@ -2976,7 +2976,19 @@ function getLongestOfThreeWords(word1, word2, word3){
   * If num2 is not greater than num1, it should return 0.
   var output = multiplyBetween(2, 5); console.log(output); // --> 24*/
   
-  
+  function multiplyBetween(num1, num2){
+      var multiply = 1;
+
+      if (num1 >= num2){
+          return 0;
+      }
+
+      for (var i=num1; i < num2; i++){
+          multiply = multiply * i;
+      }
+
+      return multiply;
+  }
     
   
   /*preImmersive-buildingBlocksMastery-145-computeSumBetween
