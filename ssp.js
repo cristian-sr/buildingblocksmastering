@@ -644,7 +644,10 @@ function cube(num){
   var output = computeTripledAreaOfARectangle(2, 4);
   console.log(output); // --> 24 */
   
-  
+  function computeTripledAreaOfARectangle(length, width){
+      tArea = (length+width)*3;
+      return tArea;
+  }
   
   /*preImmersive-buildingBlocksMastery-047-computePerimeterOfACircle
   Write a function called “computePerimeterOfACircle”.
