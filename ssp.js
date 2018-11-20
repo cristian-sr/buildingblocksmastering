@@ -712,7 +712,9 @@ function cube(num){
   var output = doubleSquareRootOf(121);
   console.log(output); // --> 22 */
   
-  
+  function doubleSquareRootOf(num){
+      return Math.sqrt(num)*2
+  }
   
   /*preImmersive-buildingBlocksMastery-052-getLengthOfThreeWords
   Write a function called “getLengthOfThreeWords”.
