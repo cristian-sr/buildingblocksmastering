@@ -2106,7 +2106,13 @@ function getElementOfArrayProperty(obj, key , n){
   
   */
   
-  
+  function squareElements(arr) {
+      var squaredElements = [];
+      for (var element in arr) {
+          squaredElements.push(arr[element] * arr[element]);
+      }
+      return squaredElements;
+  }
   
   
   /*preImmersive-buildingBlocksMastery-113-filterOddElements*
