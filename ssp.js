@@ -1476,14 +1476,15 @@ function cube(num){
   console.log(output); // --> { a: 1, c: 3 }*/
   
   function select(arr, obj){
-      var newObj = {
-          for (var i=0; i < arr.length; i++){
-            if (arr[i] === prop){
-                newObj[prop] = obj[prop];
-            }
-          }
+    var newObj = {};
+    for(var i = 0; i < arr.length; i++){
+      for(var prop in obj){
+        if(arr[i] === prop){
+          newObj[prop] = obj[prop];
+        }
       }
-      return newObj;
+    }
+    return newObj;
   }
   
   /*preImmersive-buildingBlocksMastery-090-getElementsLessThan100AtProperty*
@@ -1801,7 +1802,7 @@ function cube(num){
       }
         for (var element in obj[key]) {
             if (obj[key][element].length % 2 === 0) {
-                evenWords.push(obj[key][element])''
+                evenWords.push(obj[key][element]);
             }
         }
     return evenWords;
@@ -1961,7 +1962,7 @@ function cube(num){
     } 
     for (var i=0; i < arr.length; i++){
         if (arr[i].length > longest.length){
-            longest = arr[i]''
+            longest = arr[i];
         }
     }
     return longest.length;
