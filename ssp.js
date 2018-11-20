@@ -657,7 +657,11 @@ function cube(num){
   var output = computePerimeterOfACircle(4);
   console.log(output); // --> 25.132741228718345 */
   
-  
+  function computePerimeterOfACircle(radius){
+      Pi = 3.14159265358979323846;
+      return 2*Pi*radius;
+  }
+
   /*preImmersive-buildingBlocksMastery-048-computeAreaOfACircle
   Write a function called “computeAreaOfACircle”.
   
