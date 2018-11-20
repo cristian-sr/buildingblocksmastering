@@ -1599,7 +1599,15 @@ function cube(num){
   var output = getFirstElementOfProperty(obj, 'key');
   console.log(output); // --> 1*/
   
-  
+  function getFirstElementOfProperty(obj, key){
+    if (Array.isArray(obj[key]) === false) {
+        return undefined;
+      } else if (obj[key] === undefined) {
+        return undefined;
+      } else {
+        return obj[key][0];
+      }
+    }
   
   /*preImmersive-buildingBlocksMastery-095-getNthElementOfProperty
   Write a function called “getNthElementOfProperty”.
